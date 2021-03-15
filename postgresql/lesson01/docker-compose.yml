@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:13
+    container_name: "postgres"
+    volumes:
+      - ./initdb:/docker-entrypoint-initdb.d
+      - ./volumes/pgdata:/var/lib/postgresql/data
+    restart: "no"
+    environment:
+      TZ: JST-9
+      POSTGRES_INITDB_ARGS: '--encoding=UTF-8'
+      POSTGRES_USER: "test"
+      POSTGRES_PASSWORD: "sometest"
+      POSTGRES_DB: "testdb"
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"

@@ -1,0 +1,12 @@
+## MacOS
+*.DS_Store
+
+# Thumbnails
+._*
+
+# Editor
+.idea
+eng-start.iml
+
+# Project
+volumes
