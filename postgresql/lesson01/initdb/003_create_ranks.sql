@@ -28,3 +28,5 @@ INSERT INTO ranks (id, name, salary) VALUES
 (16, 'P', 1800),
 (17, 'Q', 1900),
 (18, 'R', 2000);
+
+SELECT setval('ranks_id_seq', 18, true);

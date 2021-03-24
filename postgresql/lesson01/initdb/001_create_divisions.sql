@@ -12,3 +12,5 @@ INSERT INTO divisions (id, name) VALUES
 (2, '開発部'),
 (3, '営業部'),
 (4, '窓際部');
+
+SELECT setval('divisions_id_seq', 4, true);

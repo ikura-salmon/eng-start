@@ -163,3 +163,5 @@ INSERT INTO employees (id, name, division_id) VALUES
 (151, '松本 九郎', 3),
 (152, '井上 九郎', 2),
 (153, '清水 九郎', 4);
+
+SELECT setval('employees_id_seq', 153, true);
